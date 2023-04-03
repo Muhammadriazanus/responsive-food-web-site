@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: var(--secondary-font);
+    background-color: var(--bg-white);
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding: 100px 0;
+}
+.main-btn{
+    display: inline-block;
+    border: radius 10px 27px ;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-text);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(to right ,var --primary-color 50%,transparent 50%);
+    background-size:200% 100% ;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+}
+.main-btn:hover{
+    color: var(--text-white);
+    background-position:left bottom ;
+}
+h1{
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--text-black);
+}
+
+
+h1 span{
+    color: var(--primary-text);
+}
+h2{
+    font-weight: 700;
+    /* font */
+}
+.header_wrapper .navbar{
+    padding: 15px 0;
+    --webkit-transition:all .2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition:all .2s linear;
+    transition: all .2s linear;
+}
+.header_wrapper .navbar-brand img{
+    max-width: 120px;
+    height: auto;
+}
+.header_wrapper .navbar-toggler:focus{
+    box-shadow: none;
+}
+.header_wrapper .nav-item{
+    margin: 0 12px;
+}
+.header_wrapper .nav-item .nav-link{
+    font-size: 18px;
+    font-weight: 500px;
+    letter-spacing: 1px;
+    display: inline;
+    /* color: black; */
+}
+.header_wrapper .nav-item .nav-link:hover{
+    color: red;
+    /* transition: all 0.2s ease-in-out; */
+}
+.header_scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+}
+.banner_wrapper{
+    padding: 100px;
+}
+.banner_wrapper .top-menu .card{
+    height: 275px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.banner_wrapper .top-menu .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   transition: tranform 500ms ease; 
+}
+.banner_wrapper .top-menu .card:hover img{
+    transform: scale(1.1);
+}
